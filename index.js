@@ -10,7 +10,7 @@ const app = express()
 
 app.use(express.json())
 const corsOptions = {
-  origin: ['http://localhost:5173'], // Allow your frontend during development
+  origin: ['http://localhost:5173' , 'https://to-do-ui-orcin.vercel.app'], // Allow your frontend during development
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed HTTP methods
   allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
   credentials: true, // Include credentials if needed
